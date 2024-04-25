@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  <div id="conteudo">
+    <h1>Fototeta?</h1>
+    <button onclick="sim()">Sim</button>
+    <button onclick="nao()" id="n">Não</button>
+  </div>
+</body>
+
+
+<style>
+body {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Torna o corpo do documento 100% da altura da viewport */
+}
+
+#conteudo {
+  padding: 10px;
+  text-align: center; /* Centraliza o texto dentro do contêiner */
+}
+
+  #conteudo{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+</style>
+<script>
+  function sim(){
+    alert('estou esperando')
+  }
+  function nao(){
+    let btn = document.getElementById('n')
+    
+    n.style.position = 'absolute'
+    n.style.top = randomNumber(10, 90)
+    n.style.left = randomNumber(10, 90)
+  }
+  
+  function randomNumber(min, max){
+    return (Math.random() * (max - min) + min) + '%'
+  }
+</script>
+</html>
